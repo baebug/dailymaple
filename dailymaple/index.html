@@ -8,6 +8,7 @@
     <body>
         <div id="headLine">
             성영아 숙제는 다 했니?
+            <h1>dd</h1>
         </div>
 
         <div id="workSpace">
@@ -15,6 +16,7 @@
                 <h1>오늘 안하면 죽음</h1>
                 <form class="dailyToDoForm">
                     <input type="text" placeholder="오늘 할 일 추가" />
+                    <input type="button" value="💾" onclick="dailyCheckSave(event)" />
                 </form>
                 <ul class="dailyToDoList">
                 </ul>
@@ -24,6 +26,7 @@
                     <h1>일요일까지 안하면 죽음</h1>
                     <form class="sunToDoForm">
                         <input type="text" placeholder="일요일까지 할 일 추가" />
+                        <input type="button" value="💾" onclick="sunCheckSave(event)" />
                     </form>
                     <ul class="sunToDoList">
                     </ul>
@@ -32,6 +35,7 @@
                     <h1>수요일까지 안하면 죽음</h1>
                     <form class="thuToDoForm">
                         <input type="text" placeholder="수요일까지 할 일 추가" />
+                        <input type="button" value="💾" onclick="thuCheckSave(event)" />
                     </form>
                     <ul class="thuToDoList">
                     </ul>
@@ -41,5 +45,6 @@
         <script src="dailyToDo.js"></script>
         <script src="sunToDo.js"></script>
         <script src="thuToDo.js"></script>
+        <script src="clock.js"></script>
     </body>
 </html>

@@ -7,9 +7,9 @@
 #headLine {
     border-bottom: 1px solid black;
     padding-top:25px;
-    height: 100px;
+    height: 150px;
     text-align:center;
-    font-size: 50px;
+    font-size: 30px;
 
 }
 
@@ -28,12 +28,13 @@ body {
 
 h1 {
     text-align: center;
+    margin: 0;
 }
 
 #dailyWork {
-    height: 1140px;
+    height: 1090px;
 }
 #weeklySun,
 #weeklyThu {
-    height: 559px;
+    height: 534px;
 }
