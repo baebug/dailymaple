@@ -1,0 +1,39 @@
+#workSpace {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+#headLine {
+    border-bottom: 1px solid black;
+    padding-top:25px;
+    height: 100px;
+    text-align:center;
+    font-size: 50px;
+
+}
+
+body {
+    margin: 0;
+}
+
+#dailyWork,
+#weeklySun,
+#weeklyThu {
+    border: 1px solid gray;
+    padding: 10px;
+    border-bottom: 0;
+    border-left: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+#dailyWork {
+    height: 1140px;
+}
+#weeklySun,
+#weeklyThu {
+    height: 559px;
+}

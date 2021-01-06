@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>숙제는 다 했니?</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="headLine">
+            성영아 숙제는 다 했니?
+        </div>
+
+        <div id="workSpace">
+            <div id="dailyWork">
+                <h1>오늘 안하면 죽음</h1>
+                <form class="dailyToDoForm">
+                    <input type="text" placeholder="오늘 할 일 추가" />
+                </form>
+                <ul class="dailyToDoList">
+                </ul>
+            </div>
+            <div id="weeklyWork">
+                <div id="weeklySun">
+                    <h1>일요일까지 안하면 죽음</h1>
+                    <form class="sunToDoForm">
+                        <input type="text" placeholder="일요일까지 할 일 추가" />
+                    </form>
+                    <ul class="sunToDoList">
+                    </ul>
+                </div>
+                <div id="weeklyThu">
+                    <h1>수요일까지 안하면 죽음</h1>
+                    <form class="thuToDoForm">
+                        <input type="text" placeholder="수요일까지 할 일 추가" />
+                    </form>
+                    <ul class="thuToDoList">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="dailyToDo.js"></script>
+        <script src="sunToDo.js"></script>
+        <script src="thuToDo.js"></script>
+    </body>
+</html>
