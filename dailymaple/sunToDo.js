@@ -92,15 +92,10 @@ function loadSCheckBox() {
     }
 }
 
-
-
-
-
-
-
 function init() {
     loadSToDos();
     loadSCheckBox();
+    setInterval(sunCheckSave, 300000);
     sunToDoForm.addEventListener("submit", handleSunSubmit);
 }
 

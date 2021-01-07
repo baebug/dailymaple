@@ -75,8 +75,8 @@ function paintDToDo(text) {
     delBtn.addEventListener("click", deleteDTodo);
     span.innerText = text;
     checkBox.setAttribute("type", "checkBox");
-    /*checkBox.setAttribute("checked", "true");
-    checkBox.addEventListener("change", getDailyCheckId); */
+    //checkBox.setAttribute("checked", "true");
+    //checkBox.addEventListener("change", dailyCheckSave);
     li.appendChild(checkBox);
     li.appendChild(span);
     li.appendChild(delBtn);
@@ -114,7 +114,7 @@ function deleteDTodo(event) {
     saveDToDos();
 }
 
-function dailyCheckSave(event) {
+function dailyCheckSave(){
     i = 1;
     while (i < dailyToDos.length + 1) {
         var checkBox = document.getElementById("DcB" + i);
@@ -168,6 +168,7 @@ function clean_LS(){
 function init() {
     loadDToDos();
     loadDCheckBox();
+    setInterval(dailyCheckSave, 300000);
     //clean_LS();
     dailyToDoForm.addEventListener("submit", handleDailySubmit);
 }

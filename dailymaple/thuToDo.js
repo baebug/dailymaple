@@ -92,15 +92,10 @@ function loadTCheckBox() {
     }
 }
 
-
-
-
-
-
-
 function init() {
     loadTToDos();
     loadTCheckBox();
+    setInterval(thuCheckSave, 300000);
     thuToDoForm.addEventListener("submit", handleThuSubmit);
 }
 
