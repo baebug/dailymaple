@@ -112,8 +112,23 @@ function deleteDTodo(event) {
     });
     dailyToDos = cleanDToDos;
     saveDToDos();
+    //loadDToDos();
+    location.reload(true);
 }
-
+function deleteDCheckBox(){
+    i = 1;
+    while (i < dailyToDos.length + 1) {
+        var checkBox = document.getElementById("DcB" + i);
+        const dailyCBObj = {
+            cBs: "false",
+            id: "DcB" + i
+        }
+        dailyCBs.push(dailyCBObj);
+        i = i + 1;
+    }
+    saveDCBs();
+    location.reload();
+}
 function dailyCheckSave(){
     i = 1;
     while (i < dailyToDos.length + 1) {
@@ -126,6 +141,7 @@ function dailyCheckSave(){
         i = i + 1;
     }
     saveDCBs();
+    location.reload();
 }
 function saveDCBs() {
     localStorage.setItem(dCB_LS, JSON.stringify(dailyCBs));
@@ -168,7 +184,6 @@ function clean_LS(){
 function init() {
     loadDToDos();
     loadDCheckBox();
-    setInterval(dailyCheckSave, 300000);
     //clean_LS();
     dailyToDoForm.addEventListener("submit", handleDailySubmit);
 }

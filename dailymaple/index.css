@@ -38,3 +38,16 @@ h1 {
 #weeklyThu {
     height: 534px;
 }
+
+button {
+    background-color:rgb(209, 201, 201);
+    border: none;
+    color: white;
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 8px;
+    margin: 4px 2px;
+    border-radius: 12px;
+}

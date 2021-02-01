@@ -60,8 +60,22 @@ function deleteTTodo(event) {
     });
     thuToDos = cleanTToDos;
     saveTToDos();
+    location.reload(true);
 }
-
+function deleteTCheckBox(){
+    i = 1;
+    while (i < thuToDos.length + 1) {
+        var checkBox = document.getElementById("TcB" + i);
+        const thuCBObj = {
+            cBs: "false",
+            id: "TcB" + i
+        }
+        thuCBs.push(thuCBObj);
+        i = i + 1;
+    }
+    saveTCBs();
+    location.reload();
+}
 function thuCheckSave(event) {
     i = 1;
     while (i < thuToDos.length + 1) {
@@ -74,6 +88,7 @@ function thuCheckSave(event) {
         i = i + 1;
     }
     saveTCBs();
+    location.reload();
 }
 function saveTCBs() {
     localStorage.setItem(tCB_LS, JSON.stringify(thuCBs));
@@ -95,7 +110,6 @@ function loadTCheckBox() {
 function init() {
     loadTToDos();
     loadTCheckBox();
-    setInterval(thuCheckSave, 300000);
     thuToDoForm.addEventListener("submit", handleThuSubmit);
 }
 

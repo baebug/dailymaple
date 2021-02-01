@@ -17,6 +17,7 @@
                 <form class="dailyToDoForm">
                     <input type="text" placeholder="오늘 할 일 추가" />
                     <input type="button" value="💾" onclick="dailyCheckSave(event)" />
+                    <input type="button" value="🗑️" onclick="deleteDCheckBox(event)" />
                 </form>
                 <ul class="dailyToDoList">
                 </ul>
@@ -27,6 +28,7 @@
                     <form class="sunToDoForm">
                         <input type="text" placeholder="일요일까지 할 일 추가" />
                         <input type="button" value="💾" onclick="sunCheckSave(event)" />
+                        <input type="button" value="🗑️" onclick="deleteSCheckBox(event)" />
                     </form>
                     <ul class="sunToDoList">
                     </ul>
@@ -36,6 +38,7 @@
                     <form class="thuToDoForm">
                         <input type="text" placeholder="수요일까지 할 일 추가" />
                         <input type="button" value="💾" onclick="thuCheckSave(event)" />
+                        <input type="button" value="🗑️" onclick="deleteTCheckBox(event)" />
                     </form>
                     <ul class="thuToDoList">
                     </ul>

@@ -60,8 +60,22 @@ function deleteSTodo(event) {
     });
     sunToDos = cleanSToDos;
     saveSToDos();
+    location.reload(true);
 }
-
+function deleteSCheckBox(){
+    i = 1;
+    while (i < sunToDos.length + 1) {
+        var checkBox = document.getElementById("ScB" + i);
+        const sunCBObj = {
+            cBs: "false",
+            id: "ScB" + i
+        }
+        sunCBs.push(sunCBObj);
+        i = i + 1;
+    }
+    saveSCBs();
+    location.reload();
+}
 function sunCheckSave(event) {
     i = 1;
     while (i < sunToDos.length + 1) {
@@ -74,6 +88,7 @@ function sunCheckSave(event) {
         i = i + 1;
     }
     saveSCBs();
+    location.reload();
 }
 function saveSCBs() {
     localStorage.setItem(sCB_LS, JSON.stringify(sunCBs));
@@ -95,7 +110,6 @@ function loadSCheckBox() {
 function init() {
     loadSToDos();
     loadSCheckBox();
-    setInterval(sunCheckSave, 300000);
     sunToDoForm.addEventListener("submit", handleSunSubmit);
 }
 
