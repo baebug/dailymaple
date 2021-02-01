@@ -13,9 +13,13 @@
 
         <div id="workSpace">
             <div id="dailyWork">
-                <h1>오늘 안하면 죽음</h1>
+                <div class="title titleFirst" id="title1">
+                    <form class="form">
+                        <input type="text" placeholder="제목을 입력하세요" />
+                    </form>
+                </div> 
                 <form class="dailyToDoForm">
-                    <input type="text" placeholder="오늘 할 일 추가" />
+                    <input type="text" placeholder="할 일 추가" />
                     <input type="button" value="💾" onclick="dailyCheckSave(event)" />
                     <input type="button" value="🗑️" onclick="deleteDCheckBox(event)" />
                 </form>
@@ -24,9 +28,13 @@
             </div>
             <div id="weeklyWork">
                 <div id="weeklySun">
-                    <h1>일요일까지 안하면 죽음</h1>
+                    <div class="title titleSecond" id="title2">
+                        <form class="form">
+                            <input type="text" placeholder="제목을 입력하세요" />
+                        </form>
+                    </div>
                     <form class="sunToDoForm">
-                        <input type="text" placeholder="일요일까지 할 일 추가" />
+                        <input type="text" placeholder="할 일 추가" />
                         <input type="button" value="💾" onclick="sunCheckSave(event)" />
                         <input type="button" value="🗑️" onclick="deleteSCheckBox(event)" />
                     </form>
@@ -34,9 +42,13 @@
                     </ul>
                 </div>
                 <div id="weeklyThu">
-                    <h1>수요일까지 안하면 죽음</h1>
+                    <div class="title titleThird" id="title3">
+                        <form class="form">
+                            <input type="text" placeholder="제목을 입력하세요" />
+                        </form>
+                    </div>
                     <form class="thuToDoForm">
-                        <input type="text" placeholder="수요일까지 할 일 추가" />
+                        <input type="text" placeholder="할 일 추가" />
                         <input type="button" value="💾" onclick="thuCheckSave(event)" />
                         <input type="button" value="🗑️" onclick="deleteTCheckBox(event)" />
                     </form>
@@ -49,5 +61,6 @@
         <script src="sunToDo.js"></script>
         <script src="thuToDo.js"></script>
         <script src="clock.js"></script>
+        <script src="titleCtrl.js"></script>
     </body>
 </html>
