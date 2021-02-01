@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>숙제는 다 했니?</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="headLine">
+            성영아 숙제는 다 했니?
+            <h1>dd</h1>
+        </div>
+
+        <div id="workSpace">
+            <div id="dailyWork">
+                <div class="title titleFirst" id="title1">
+                    <form class="form">
+                        <input type="text" placeholder="제목을 입력하세요" />
+                    </form>
+                </div> 
+                <form class="dailyToDoForm">
+                    <input type="text" placeholder="할 일 추가" />
+                    <input type="button" value="💾" onclick="dailyCheckSave(event)" />
+                    <input type="button" value="🗑️" onclick="deleteDCheckBox(event)" />
+                </form>
+                <ul class="dailyToDoList">
+                </ul>
+            </div>
+            <div id="weeklyWork">
+                <div id="weeklySun">
+                    <div class="title titleSecond" id="title2">
+                        <form class="form">
+                            <input type="text" placeholder="제목을 입력하세요" />
+                        </form>
+                    </div>
+                    <form class="sunToDoForm">
+                        <input type="text" placeholder="할 일 추가" />
+                        <input type="button" value="💾" onclick="sunCheckSave(event)" />
+                        <input type="button" value="🗑️" onclick="deleteSCheckBox(event)" />
+                    </form>
+                    <ul class="sunToDoList">
+                    </ul>
+                </div>
+                <div id="weeklyThu">
+                    <div class="title titleThird" id="title3">
+                        <form class="form">
+                            <input type="text" placeholder="제목을 입력하세요" />
+                        </form>
+                    </div>
+                    <form class="thuToDoForm">
+                        <input type="text" placeholder="할 일 추가" />
+                        <input type="button" value="💾" onclick="thuCheckSave(event)" />
+                        <input type="button" value="🗑️" onclick="deleteTCheckBox(event)" />
+                    </form>
+                    <ul class="thuToDoList">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="dailyToDo.js"></script>
+        <script src="sunToDo.js"></script>
+        <script src="thuToDo.js"></script>
+        <script src="clock.js"></script>
+        <script src="titleCtrl.js"></script>
+    </body>
+</html>
