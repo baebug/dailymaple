@@ -54,7 +54,7 @@ button {
     border-radius: 12px;
 }
 
-@media ( max-width: 800px ) {
+@media ( max-width: 980px ) {
     #workSpace {
         display: block;
     }
